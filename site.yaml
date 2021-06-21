@@ -1,0 +1,37 @@
+---
+
+ - name: Arch Linux post-provisioning
+   hosts: localhost
+   roles:
+     - role: packages
+       tags:
+         - packages
+         - postinst
+     - role: sddm
+       tags:
+         - sddm
+         - postinst
+     - role: services
+       tags:
+         - services
+         - postinst
+     - role: chezmoi
+       tags:
+         - chezmoi
+         - dotfiles
+         - postinst
+     - role: nvim
+       tags:
+         - nvim
+         - dotfiles
+         - postinst
+
+ - name: Reboot
+   hosts: localhost
+   tasks:
+     - name: Reboot the computer
+       shell: shutdown -r +1
+       changed_when: no
+   tags:
+     - never
+     - postinst
