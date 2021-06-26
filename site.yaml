@@ -25,6 +25,10 @@
          - nvim
          - dotfiles
          - postinst
+     - role: shell_profile
+       tags:
+         - shell_profile
+         - postinst
 
  - name: Reboot
    hosts: localhost
