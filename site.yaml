@@ -15,6 +15,10 @@
        tags:
          - services
          - postinst
+     - role: plymouth
+       tags:
+         - plymouth
+         - postinst
      - role: chezmoi
        tags:
          - chezmoi
@@ -28,6 +32,10 @@
      - role: shell_profile
        tags:
          - shell_profile
+         - postinst
+     - role: dracut
+       tags:
+         - dracut
          - postinst
 
  - name: Reboot
