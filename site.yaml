@@ -29,13 +29,25 @@
          - nvim
          - dotfiles
          - postinst
+     - role: gitconfig
+       tags:
+         - gitconfig
+         - dotfiles
+         - postinst
      - role: shell_profile
        tags:
          - shell_profile
+         - dotfiles
+         - postinst
+     - role: plymouth
+       tags:
+         - plymouth
+         - boot
          - postinst
      - role: dracut
        tags:
          - dracut
+         - boot
          - postinst
 
  - name: Reboot
