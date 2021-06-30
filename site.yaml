@@ -15,9 +15,10 @@
        tags:
          - services
          - postinst
-     - role: plymouth
+     - role: gitconfig
        tags:
-         - plymouth
+         - gitconfig
+         - dotfiles
          - postinst
      - role: chezmoi
        tags:
@@ -27,11 +28,6 @@
      - role: nvim
        tags:
          - nvim
-         - dotfiles
-         - postinst
-     - role: gitconfig
-       tags:
-         - gitconfig
          - dotfiles
          - postinst
      - role: shell_profile
