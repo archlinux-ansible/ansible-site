@@ -30,6 +30,11 @@
          - nvim
          - dotfiles
          - postinst
+     - role: oomox
+       tags:
+         - oomox
+         - dotfiles
+         - postinst
      - role: shell_profile
        tags:
          - shell_profile
