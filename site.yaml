@@ -40,6 +40,10 @@
          - shell_profile
          - dotfiles
          - postinst
+     - role: group_membership
+       tags:
+         - groups
+         - postinst
      - role: plymouth
        tags:
          - plymouth
